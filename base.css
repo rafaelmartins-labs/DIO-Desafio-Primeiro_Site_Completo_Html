@@ -1,0 +1,273 @@
+html, body {
+    margin: 0;
+}
+body {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    /*background-color: aquamarine;*/
+}
+.main {
+    display: flex;
+    flex-flow: column;
+    width: 85%;
+}
+.menu {
+    width: 15%;
+    background-color: #174A45;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+}
+.header {
+    /*background-color: rgb(5, 108, 108); */
+    min-height: 150px;
+}
+.content {
+    background-color: white;
+    min-height: 300px;
+    padding: 20px;
+}
+
+.content h1 {
+    color: #174A45;
+    font-weight: bold;
+    text-align: center;
+}
+
+.content h2 {
+    color: #B68B72;
+    font-style: italic;
+    text-align: center;
+}
+
+.content p {
+    color: #34332E;
+    font-size: 20px;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    border-radius: 3%;
+    padding: 20px;
+    background-color: #F8F3EA;
+}
+
+.card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    height: 100px;
+}
+
+.card-img {
+    border-radius: 5%;
+    height: 100%;
+}
+
+.card-img img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.card-content h3 {
+    padding: 0px;
+    margin: 0px 0px 10px 0px;
+    color: #174A45;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.card-content p {
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+
+.footer {
+    background-color: #174A45;
+    min-height: 100px;
+    margin: 0px 0px 0px 0px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    color: #FAF8F3;
+    width: 100%;
+    padding: 0;
+    margin: 0px 0px 0px 0px;
+}
+
+.menu ul li {
+    margin: 35px 0px 35px 0px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #FAF8F3;
+    font-size: 20px;
+}
+
+/* Tabelas - Estilo Geral */
+.tabelaHorarios,
+.tabelaServicos {
+    width: 80%;
+    margin: 25px auto;
+    border: solid #C9A66B;
+    border-radius: 12px;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+/*Estilo do CABEÇALHO*/
+.tabelaHorarios th,
+.tabelaServicos th {
+    background-color: #174A45;
+    color: #C9A66B;
+    text-align: center;
+    padding: 14px;
+}
+
+/*Arredondamento do Cabeçalho*/
+.tabelaHorarios th:first-child,
+.tabelaServicos th:first-child {
+    border-top-left-radius: 11px;
+}
+
+.tabelaHorarios th:last-child,
+.tabelaServicos th:last-child {
+    border-top-right-radius: 11px;
+}
+
+
+/* Estilo das CÉLULAS */
+
+.tabelaHorarios td,
+.tabelaServicos td {
+    color: #34332E;
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #E5D8C2;
+}
+
+/*linhas Alternadas*/
+.tabelaHorarios tbody tr:nth-child(odd),
+.tabelaServicos tbody tr:nth-child(odd) {
+    background-color: #F8F3EA;
+}
+
+.tabelaHorarios tbody tr:nth-child(even),
+.tabelaServicos tbody tr:nth-child(even) {
+    background-color: #FAF8F3;
+}
+
+/*Estilo da CATEGORIA dos serviços*/
+
+.tabelaServicos .categoria td {
+    background-color: #E3ECE8;
+    color: #174A45;
+    font-weight: bold;
+    text-align: left;
+    padding: 12px;
+}
+
+/*Estilo ao passar o mouse em cima*/
+.tabelaHorarios tbody tr:hover,
+.tabelaServicos tbody tr:hover {
+    background-color: #EFE5D5;
+}
+
+.contato-info {
+    background-color: #FAF8F3;
+    border: 1px solid #C9A66B;
+    border-radius: 12px;
+    padding: 15px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.contato-info p {
+    font-size: 18px;
+    margin: 12px;
+}
+
+form {
+    background-color: #FAF8F3;
+    border: 1px solid #C9A66B;
+    border-radius: 12px;
+    padding: 20px 40px;
+    width: 80%;
+    margin: 20px auto
+}
+
+form label {
+    display: block;
+    color: #174A45;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 19px;
+    font-family: Arial, sans-serif;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #D8CBB7;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+form input:focus,
+form textarea:focus {
+    border: 2px solid;
+    border-color: #C9A66B;
+    outline: none;
+}
+
+form textarea {
+    resize: vertical;
+    height: 150px;
+    
+}
+
+form button {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 30px 15px 20px 0px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.enviar {
+    background-color: #174A45;
+    color: #FAF8F3;
+    border: 1px solid #174A45;
+}
+
+.limpar {
+    background-color: #FAF8F3;
+    color: #174A45;
+    border: 1px solid #C9A66B;
+}
