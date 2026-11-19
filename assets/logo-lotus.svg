@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">Logo Flor de Lótus Dourada</title>
+  <defs>
+    <!-- Gradiente dourado principal das pétalas -->
+    <linearGradient id="goldPetal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0A6" />
+      <stop offset="30%" stop-color="#F6CE66" />
+      <stop offset="65%" stop-color="#D49533" />
+      <stop offset="100%" stop-color="#966016" />
+    </linearGradient>
+
+    <!-- Gradiente dourado mais claro para luz central -->
+    <linearGradient id="goldCenter" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5BA" />
+      <stop offset="35%" stop-color="#F4C95D" />
+      <stop offset="75%" stop-color="#C88628" />
+      <stop offset="100%" stop-color="#875210" />
+    </linearGradient>
+
+    <!-- Gradiente dourado mais profundo para pétalas externas/fundo -->
+    <linearGradient id="goldDeep" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F7D26C" />
+      <stop offset="50%" stop-color="#C58225" />
+      <stop offset="100%" stop-color="#7C4A0D" />
+    </linearGradient>
+
+    <!-- Gradiente para bordas metálicas e brilho -->
+    <linearGradient id="goldRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF7C8" />
+      <stop offset="50%" stop-color="#E6AD47" />
+      <stop offset="100%" stop-color="#7A480B" />
+    </linearGradient>
+
+    <!-- Gradiente radial para as esferas douradas -->
+    <radialGradient id="goldSphere" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFF8CE" />
+      <stop offset="45%" stop-color="#EAB34D" />
+      <stop offset="85%" stop-color="#9B6317" />
+      <stop offset="100%" stop-color="#6B3E07" />
+    </radialGradient>
+  </defs>
+
+  <g stroke="url(#goldRim)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+    
+    <!-- ==================== PÉTALAS DE FUNDO (CAMADA 1) ==================== -->
+    <!-- Pétala superior traseira -->
+    <path d="M 400 26 C 350 95, 325 175, 400 355 C 475 175, 450 95, 400 26 Z" fill="url(#goldDeep)" />
+
+    <!-- ==================== CAMADA INTERMEDIÁRIA EXTERNA (CAMADA 2) ==================== -->
+    <!-- Pétala média-externa esquerda -->
+    <path d="M 225 82 C 210 175, 235 285, 396 362 C 340 245, 305 145, 225 82 Z" fill="url(#goldPetal)" />
+    <!-- Vincos internos esquerda -->
+    <path d="M 225 82 C 258 178, 305 270, 396 362" fill="none" stroke="#8F5912" stroke-width="1.5" opacity="0.65" />
+
+    <!-- Pétala média-externa direita -->
+    <path d="M 575 82 C 590 175, 565 285, 404 362 C 460 245, 495 145, 575 82 Z" fill="url(#goldPetal)" />
+    <!-- Vincos internos direita -->
+    <path d="M 575 82 C 542 178, 495 270, 404 362" fill="none" stroke="#8F5912" stroke-width="1.5" opacity="0.65" />
+
+    <!-- ==================== PÉTALAS LATERAIS MÉDIAS (CAMADA 3) ==================== -->
+    <!-- Lateral média esquerda -->
+    <path d="M 118 168 C 155 245, 225 328, 394 366 C 310 292, 235 190, 118 168 Z" fill="url(#goldDeep)" />
+    <path d="M 118 168 C 195 225, 285 298, 394 366" fill="none" stroke="#FFF2B2" stroke-width="1.5" opacity="0.7" />
+
+    <!-- Lateral média direita -->
+    <path d="M 682 168 C 645 245, 575 328, 406 366 C 490 292, 565 190, 682 168 Z" fill="url(#goldDeep)" />
+    <path d="M 682 168 C 605 225, 515 298, 406 366" fill="none" stroke="#FFF2B2" stroke-width="1.5" opacity="0.7" />
+
+    <!-- ==================== PÉTALAS LATERAIS INFERIORES (CAMADA 4) ==================== -->
+    <!-- Lateral inferior esquerda -->
+    <path d="M 48 258 C 115 325, 225 368, 392 370 C 280 335, 165 262, 48 258 Z" fill="url(#goldPetal)" />
+    <path d="M 48 258 C 145 285, 265 332, 392 370" fill="none" stroke="#8A5410" stroke-width="1.4" opacity="0.6" />
+
+    <!-- Lateral inferior direita -->
+    <path d="M 752 258 C 685 325, 575 368, 408 370 C 520 335, 635 262, 752 258 Z" fill="url(#goldPetal)" />
+    <path d="M 752 258 C 655 285, 535 332, 408 370" fill="none" stroke="#8A5410" stroke-width="1.4" opacity="0.6" />
+
+    <!-- ==================== PÉTALAS FRONTAIS INTERNAS (CAMADA 5) ==================== -->
+    <!-- Pétala frontal esquerda -->
+    <path d="M 252 135 C 235 225, 268 312, 398 366 C 378 265, 338 188, 252 135 Z" fill="url(#goldCenter)" />
+    <path d="M 252 135 C 292 215, 335 295, 398 366" fill="none" stroke="#8E5812" stroke-width="1.4" opacity="0.55" />
+
+    <!-- Pétala frontal direita -->
+    <path d="M 548 135 C 565 225, 532 312, 402 366 C 422 265, 462 188, 548 135 Z" fill="url(#goldCenter)" />
+    <path d="M 548 135 C 508 215, 465 295, 402 366" fill="none" stroke="#8E5812" stroke-width="1.4" opacity="0.55" />
+
+    <!-- ==================== PÉTALA CENTRAL PRINCIPAL (CAMADA 6) ==================== -->
+    <path d="M 400 88 C 318 175, 315 285, 400 368 C 485 285, 482 175, 400 88 Z" fill="url(#goldCenter)" stroke-width="3" />
+    <!-- Nervura central sutil -->
+    <line x1="400" y1="95" x2="400" y2="364" stroke="#9B6318" stroke-width="1.5" opacity="0.65" />
+    <!-- Brilho interno da borda -->
+    <path d="M 400 94 C 324 178, 321 282, 400 362 C 479 282, 476 178, 400 94 Z" fill="none" stroke="#FFF6C3" stroke-width="1.2" opacity="0.75" />
+
+    <!-- ==================== ORNAMENTOS INFERIORES ==================== -->
+    <!-- Hastes curvas superiores -->
+    <path d="M 392 372 C 330 360, 265 375, 220 398 C 272 385, 332 372, 390 380 Z" fill="url(#goldPetal)" stroke-width="1.5" />
+    <path d="M 408 372 C 470 360, 535 375, 580 398 C 528 385, 468 372, 410 380 Z" fill="url(#goldPetal)" stroke-width="1.5" />
+
+    <!-- Hastes curvas inferiores com pontas para esferas -->
+    <path d="M 388 384 C 325 375, 255 415, 185 402 C 248 426, 322 390, 388 390 Z" fill="url(#goldPetal)" stroke-width="1.5" />
+    <path d="M 412 384 C 475 375, 545 415, 615 402 C 552 426, 478 390, 412 390 Z" fill="url(#goldPetal)" stroke-width="1.5" />
+
+    <!-- Esferas laterais -->
+    <circle cx="174" cy="400" r="6.5" fill="url(#goldSphere)" stroke-width="1.5" />
+    <circle cx="626" cy="400" r="6.5" fill="url(#goldSphere)" stroke-width="1.5" />
+
+    <!-- Arcos que descem para o pingente central -->
+    <path d="M 390 392 C 345 398, 315 422, 285 432 C 322 426, 362 406, 400 448 C 438 406, 478 426, 515 432 C 485 422, 455 398, 410 392" fill="none" stroke="url(#goldRim)" stroke-width="3.2" />
+
+    <!-- Esfera central -->
+    <circle cx="400" cy="386" r="12" fill="url(#goldSphere)" stroke-width="2" />
+
+    <!-- Pingente vertical (esfera pequena + losango + esfera inferior) -->
+    <circle cx="400" cy="462" r="4.5" fill="url(#goldSphere)" stroke-width="1.2" />
+    
+    <!-- Losango externo -->
+    <polygon points="400,474 416,502 400,530 384,502" fill="url(#goldPetal)" stroke-width="2" />
+    <!-- Losango interno (relevo) -->
+    <polygon points="400,482 410,502 400,522 390,502" fill="url(#goldDeep)" stroke-width="1.2" />
+
+    <!-- Esfera na ponta final -->
+    <circle cx="400" cy="540" r="4" fill="url(#goldSphere)" stroke-width="1.2" />
+  </g>
+</svg>
